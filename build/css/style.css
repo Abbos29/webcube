@@ -165,11 +165,81 @@ nav {
 
 .menu__item-link {
   color: white;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.menu__item-link:hover {
+  color: #A8D900;
 }
 
 .burger {
   display: none;
   cursor: pointer;
+}
+
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.header__title {
+  font-weight: 700;
+  font-size: 82px;
+  text-align: center;
+  line-height: 120%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.header__subtitle {
+  margin: 0 auto;
+  max-width: 765px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  color: #606060;
+}
+
+.header__img {
+  max-width: 100%;
+}
+
+.header__img-mini {
+  max-width: 100%;
+  display: none;
+}
+
+.header .start-btn {
+  position: absolute;
+  right: 70px;
+  bottom: 80px;
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  padding: 19px 32px;
+  background: #C6FF00;
+  border-radius: 12px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.header .start-btn:hover {
+  background: #A8D900;
 }
 
 footer {
@@ -196,6 +266,23 @@ footer {
   .menu {
     gap: 30px;
   }
+
+  .header__title {
+    font-size: 74px;
+  }
+
+  .header__subtitle {
+    font-size: 25px;
+  }
+
+  .header__img {
+    display: none;
+  }
+
+  .header__img-mini {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -205,6 +292,14 @@ footer {
 
   .star {
     display: none;
+  }
+
+  .header__title {
+    font-size: 68px;
+  }
+
+  .header__subtitle {
+    font-size: 20px;
   }
 }
 
@@ -333,5 +428,13 @@ footer {
 @media (max-width: 479.98px) {
   .container {
     max-width: none;
+  }
+
+  .header__title {
+    font-size: 47px;
+  }
+
+  .header__subtitle {
+    font-size: 20px;
   }
 }
