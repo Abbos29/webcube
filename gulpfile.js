@@ -1,11 +1,3 @@
-// import { plugins } from "./gulp/config/plugins";
-
-// global.app = {
-//     path: path,
-//     gulp: gulp,
-//     plugins: plugins
-// }
-
 let project_folder = 'build'
 let source_folder = 'src'
 
