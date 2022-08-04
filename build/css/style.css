@@ -200,6 +200,7 @@ nav {
   line-height: 120%;
   margin: 0 auto;
   max-width: 1170px;
+  margin-bottom: 60px;
 }
 
 .header__subtitle {
@@ -268,11 +269,13 @@ footer {
   }
 
   .header__title {
-    font-size: 74px;
+    font-size: 64px;
+    line-height: 100%;
+    margin-bottom: 50px;
   }
 
   .header__subtitle {
-    font-size: 25px;
+    font-size: 28px;
   }
 
   .header__img {
@@ -282,6 +285,10 @@ footer {
   .header__img-mini {
     display: block;
     margin: 0 auto;
+  }
+
+  .header .start-btn {
+    bottom: 60px;
   }
 }
 
@@ -295,11 +302,16 @@ footer {
   }
 
   .header__title {
-    font-size: 68px;
+    font-size: 60px;
+    margin-bottom: 30px;
   }
 
   .header__subtitle {
     font-size: 20px;
+  }
+
+  .header .start-btn {
+    bottom: 50px;
   }
 }
 
@@ -431,10 +443,17 @@ footer {
   }
 
   .header__title {
-    font-size: 47px;
+    font-size: 38px;
+    margin-bottom: 20px;
   }
 
   .header__subtitle {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 100%;
+  }
+
+  .header .start-btn {
+    bottom: 30px;
+    right: 50px;
   }
 }
