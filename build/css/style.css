@@ -42,6 +42,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
   text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -325,6 +326,83 @@ nav {
   margin-right: 7%;
 }
 
+.portfolio {
+  padding-top: 160px;
+}
+
+.portfolio .container {
+  padding: 0 80px;
+}
+
+.portfolio .title__h2 {
+  max-width: 453px;
+  padding-bottom: 60px;
+}
+
+.portfolio__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+
+.portfolio__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 80px;
+}
+
+.portfolio__box {
+  max-width: 633px;
+}
+
+.portfolio__img {
+  max-width: 100%;
+  border-radius: 32px;
+}
+
+.portfolio__text {
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.0007em;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 40px 0 16px;
+}
+
+.portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+}
+
+.portfolio__item {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 6px 12px;
+  background: #000;
+  background: rgba(48, 48, 48, 0.8);
+  -webkit-backdrop-filter: blur(100px);
+          backdrop-filter: blur(100px);
+  border-radius: 8px;
+}
+
 footer {
   display: block;
 }
@@ -426,6 +504,26 @@ footer {
   .about__wrapper {
     text-align: center;
     padding: 70px 0;
+  }
+
+  .portfolio .container {
+    padding: 0 20px;
+  }
+
+  .portfolio .title__h2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .portfolio__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 80px;
   }
 }
 
