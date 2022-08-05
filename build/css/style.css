@@ -331,7 +331,18 @@ nav {
 }
 
 .portfolio .title__h2 {
+  position: relative;
   max-width: 453px;
+}
+
+.portfolio .title__h2::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 0;
+  right: 0;
+  background-image: url(../img/icon-star.png);
 }
 
 .portfolio__wrapper {
