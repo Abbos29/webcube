@@ -193,7 +193,38 @@ nav {
   height: 100vh;
 }
 
+.header__content {
+  position: relative;
+}
+
+.header__content::before {
+  content: " ";
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-image: url(../img/icon-star.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 45%;
+  left: 7%;
+}
+
+.header__content::after {
+  content: " ";
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background-image: url(../img/icon-star.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/icon-star.png);
+  top: 100%;
+  right: 7%;
+}
+
 .header__title {
+  position: relative;
+  z-index: 2;
   font-weight: 700;
   font-size: 82px;
   text-align: center;
@@ -204,6 +235,8 @@ nav {
 }
 
 .header__subtitle {
+  position: relative;
+  z-index: 2;
   margin: 0 auto;
   max-width: 765px;
   text-align: center;
@@ -245,6 +278,17 @@ nav {
 
 footer {
   display: block;
+}
+
+@media (min-width: 1449.98px) {
+  .header__content::before {
+    left: 10%;
+    top: 50%;
+  }
+
+  .header__content::after {
+    right: 10%;
+  }
 }
 
 @media (min-width: 1919.98px) {
@@ -299,6 +343,14 @@ footer {
 
   .star {
     display: none;
+  }
+
+  .header__content::before {
+    top: 100%;
+  }
+
+  .header__content::after {
+    top: 100%;
   }
 
   .header__title {
@@ -434,6 +486,14 @@ footer {
 @media (max-width: 767.98px) {
   .container {
     max-width: 740px;
+  }
+
+  .header__content::before {
+    display: none;
+  }
+
+  .header__content::after {
+    display: none;
   }
 }
 
