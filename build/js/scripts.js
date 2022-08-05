@@ -19,6 +19,13 @@ function burgerMenu() {
         body.classList.remove('locked')
       }
     })
+    menu.addEventListener("click", (event) => {
+      if(event.target){
+        menu.classList.remove('active')
+        burger.classList.remove('active-burger')
+        body.classList.remove('locked')
+      }
+    })
     // Вот тут мы ставим брейкпоинт навбара
     window.addEventListener('resize', () => {
       if (window.innerWidth > 991.98) {
