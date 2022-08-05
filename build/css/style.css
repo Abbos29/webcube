@@ -198,7 +198,7 @@ nav {
 }
 
 .header__content::before {
-  content: " ";
+  content: "";
   position: absolute;
   width: 75px;
   height: 75px;
@@ -210,14 +210,13 @@ nav {
 }
 
 .header__content::after {
-  content: " ";
+  content: "";
   position: absolute;
   width: 75px;
   height: 75px;
   background-image: url(../img/icon-star.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(../img/icon-star.png);
   top: 100%;
   right: 7%;
 }
@@ -315,7 +314,7 @@ footer {
   .header__title {
     font-size: 64px;
     line-height: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .header__subtitle {
@@ -346,10 +345,6 @@ footer {
   }
 
   .header__content::before {
-    top: 100%;
-  }
-
-  .header__content::after {
     top: 100%;
   }
 
