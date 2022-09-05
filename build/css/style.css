@@ -497,8 +497,30 @@ nav {
   background: #A8D900;
 }
 
+.testimolials__arrows {
+  width: 16px;
+  margin-left: auto;
+  position: relative;
+  top: -340px;
+  z-index: 10;
+}
+
+.swiper-prev {
+  cursor: pointer;
+  width: 16px;
+  margin-bottom: 10px;
+}
+
+.swiper-next {
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 16px;
+}
+
 .slider {
-  margin: 60px 0 80px;
+  margin: 60px 0 0;
 }
 
 .slide {
@@ -516,6 +538,10 @@ nav {
   height: 100%;
 }
 
+.slide__content {
+  padding-right: 40px;
+}
+
 .slide__title {
   font-weight: 700;
   font-size: 48px;
@@ -531,6 +557,7 @@ nav {
 }
 
 .slide__link {
+  width: 200px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -689,7 +716,12 @@ nav {
   margin-top: 60px;
 }
 
+.products__item {
+  max-width: 500px;
+}
+
 .products__item-img {
+  max-height: 677px;
   max-width: 100%;
 }
 
@@ -891,13 +923,24 @@ nav {
           box-shadow: 0px 4px 30px rgba(27, 86, 231, 0.5);
 }
 
+@font-face {
+  font-family: "Euclid Circular";
+  src: local("Euclid Circular Medium"), local("Euclid-Circular-Medium"), url("../fonts/EuclidCircularA-Medium.woff2") format("woff2"), url("../fonts/EuclidCircularA-Medium.woff") format("woff"), url("../fonts/EuclidCircularA-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
 .form {
   padding-top: 160px;
+}
+
+.form .container {
   position: relative;
 }
 
-.form::after {
+.form .container::after {
   content: "";
+  padding: 0 20px;
   position: absolute;
   width: 100%;
   height: 2px;
@@ -914,12 +957,23 @@ nav {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .form__title span {
   color: transparent;
   -webkit-text-stroke: 1px white;
   text-stroke: 1px white;
+}
+
+.form__title::after {
+  position: absolute;
+  content: "";
+  top: 150px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #C6FF00;
 }
 
 .form__btn {
@@ -959,18 +1013,20 @@ nav {
   background: linear-gradient(76.85deg, #1E1F24 19%, #101010 93.03%);
   border: 1px solid #F0EFF4;
   border-radius: 999px;
-  padding: 20px;
+  padding: 18px 20px 18px 40px;
 }
 
 input[type=text],
 textarea {
+  font-family: "Euclid Circular";
   font-weight: 500;
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0.2px;
   outline: none;
-  width: 250px;
-  padding: 5px;
+  max-width: 250px;
+  min-width: 200px;
+  padding: 5px 5px 5px 0;
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
@@ -981,24 +1037,24 @@ textarea {
 }
 
 input[type=text]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-  color: #fff;
+  color: #898A8E;
 }
 
 input[type=text]::-moz-placeholder, textarea::-moz-placeholder {
-  color: #fff;
+  color: #898A8E;
 }
 
 input[type=text]:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  color: #fff;
+  color: #898A8E;
 }
 
 input[type=text]::-ms-input-placeholder, textarea::-ms-input-placeholder {
-  color: #fff;
+  color: #898A8E;
 }
 
 input[type=text]::placeholder,
 textarea::placeholder {
-  color: #fff;
+  color: #898A8E;
 }
 
 input[type=text]:focus,
