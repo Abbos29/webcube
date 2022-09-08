@@ -269,14 +269,14 @@ nav {
 
 .header__img-mini {
   max-width: 100%;
-  display: none;
+  margin: 0 auto;
 }
 
 .header .start-btn {
   position: fixed;
   z-index: 10;
   right: 70px;
-  bottom: 80px;
+  bottom: 120px;
   color: #000;
   font-weight: 700;
   font-size: 20px;
@@ -614,8 +614,8 @@ nav {
 .team__card {
   position: relative;
   z-index: 2;
-  max-width: 368px;
-  margin-bottom: 20px;
+  max-width: 367.5px;
+  height: 367.5px;
 }
 
 .team__img {
@@ -1994,15 +1994,6 @@ button.swiper-pagination-bullet {
 
   .header__subtitle {
     font-size: 28px;
-  }
-
-  .header__img {
-    display: none;
-  }
-
-  .header__img-mini {
-    display: block;
-    margin: 0 auto;
   }
 
   .header .start-btn {

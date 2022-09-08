@@ -62,8 +62,14 @@
         </div>
 
         <div class="header__imgs">
-            <img class="header__img" src="./img/header/hero-img.png" alt="ipad">
-            <img class="header__img-mini" src="./img/header/ipad.png" alt="ipad-mini">
+            <picture>
+                <source class="header__img" src="./img/header/ipad.png" media="(max-width: 1450px)">
+
+                <img class="header__img" src="./img/header/hero-img.png">
+            </picture>
+
+            <!-- <img class="header__img" src="./img/header/hero-img.png" alt="ipad">
+            <img class="header__img-mini" src="./img/header/ipad.png" alt="ipad-mini"> -->
         </div>
 
         <a class="start-btn" href="#form">Start porject</a>
@@ -79,7 +85,8 @@
 
             <div class="about__content">
                 <h2 class="title__h2">Who we are</h2>
-                <p class="about__text">My work is mainly focused on third-dimension modeling, texturing and rendering. I like exploring the creatures with a touch of dark surrealism for characters and production.<br><br>Now I’m an interactive media design student in Istanbul ⏤ currently freelancing and seeking internship opportunities.</p>
+                <p class="about__text">My work is mainly focused on third-dimension modeling, texturing and rendering. I like exploring the creatures with a touch of dark surrealism for characters and production.</p>
+                <p class="about__text">Now I’m an interactive media design student in Istanbul ⏤ currently freelancing and seeking internship opportunities.</p>
             </div>
 
             <img class="about__cube" src="./img/about/cube.png" alt="cube">
