@@ -268,7 +268,9 @@ nav {
 }
 
 .header__img-mini {
-  max-width: 100%;
+  max-width: 400px;
+  width: 100%;
+  display: none;
   margin: 0 auto;
 }
 
@@ -579,7 +581,7 @@ nav {
 }
 
 .team {
-  margin-bottom: 80px;
+  margin: 100px 0 160px;
 }
 
 .team__title {
@@ -957,6 +959,12 @@ nav {
   left: 0;
 }
 
+.form__img {
+  max-width: 100%;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
 .form__title {
   font-weight: 700;
   font-size: 120px;
@@ -1118,7 +1126,7 @@ input[type=button]:focus {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 
 .footer__text {
@@ -2069,6 +2077,14 @@ button.swiper-pagination-bullet {
     font-size: 20px;
   }
 
+  .header__img {
+    display: none;
+  }
+
+  .header__img-mini {
+    display: block;
+  }
+
   .header .start-btn {
     bottom: 50px;
   }
@@ -2148,6 +2164,10 @@ button.swiper-pagination-bullet {
   .slide__link {
     font-size: 16px;
     gap: 8px;
+  }
+
+  .team {
+    margin: 80px 0 100px;
   }
 
   .team__title {
@@ -2398,7 +2418,7 @@ button.swiper-pagination-bullet {
   }
 
   .footer {
-    padding: 100px 0 60px;
+    padding: 120px 0 60px;
   }
 
   .footer__wrapper {
@@ -2502,6 +2522,10 @@ button.swiper-pagination-bullet {
     font-size: 12px;
   }
 
+  .team {
+    padding: 60px 0 0p;
+  }
+
   .team__title {
     padding: 0 0 36px;
   }
@@ -2509,6 +2533,10 @@ button.swiper-pagination-bullet {
   .team__text {
     font-size: 16px;
     color: #606060;
+  }
+
+  .team__wrapper {
+    gap: 0px;
   }
 
   .team__name {
@@ -2560,6 +2588,7 @@ button.swiper-pagination-bullet {
 
   .contacts__inner {
     margin-right: 0;
+    gap: 10px;
   }
 
   .form {
@@ -2586,11 +2615,11 @@ button.swiper-pagination-bullet {
   }
 
   .footer {
-    padding: 80px 0;
+    padding: 100px 0 60px;
   }
 
   .footer__inner {
-    gap: 8px;
+    gap: 14px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
